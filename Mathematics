@@ -1,0 +1,104 @@
+Count Digits
+
+
+
+import java.io.*;
+import java.util.*;
+import static java.lang.System.out;
+
+class GFG {
+
+	
+	static int countDigits(int x)
+	{
+		int res = 0;
+
+		while(x > 0)
+		{
+				x = x / 10;
+
+				res++;
+		}	
+
+		return res;
+	}
+
+	public static void main (String[] args) {
+		
+		int number = 789990898;
+
+		System.out.println(countDigits(number));
+
+	}
+  
+  
+  
+
+
+Palindrome Number  
+  
+ 
+ 
+import java.io.*;
+import java.util.*;
+
+class GFG {
+
+	
+	static boolean isPal(int n)
+	{
+		int rev = 0;
+
+		int temp = n;
+		while(temp != 0)
+		{
+			int ld = temp % 10;
+
+			rev = rev * 10 + ld;
+
+			temp = temp / 10;
+		}	
+
+		return rev==n;
+	}
+
+	public static void main (String[] args) {
+		
+		int number = 4553;
+
+		System.out.println(isPal(number));
+
+	}
+}
+
+
+
+
+Factorial 
+
+
+import java.io.*;
+import java.util.*;
+
+class GFG {
+
+	
+	static int fact(int n)
+	{
+		int res = 1;
+
+		for(int i=2; i<=n; i++)
+		{
+			res = res * i;
+		}
+		return res;
+	}
+
+	public static void main (String[] args) {
+		
+		int number = 5;
+
+		System.out.println(fact(number));
+
+	}
+}
